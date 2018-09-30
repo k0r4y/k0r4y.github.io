@@ -7,7 +7,31 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.style2 h2{
+	color: #2e3842 !important;
+	
+}
+
+.pricing-navbar-text, a{
+	color: white !important;
+	
+}
+
+#navbar-custom {
+	left: 35% !important;
+	display: inline !important;
+	color: #ffffff !important;
+	/* text-align: center !important; */
+}
+
+@media only screen and (max-width : 400px){
+    .limit{
+        display:none;
+    }
+}
+
 .navbar-text {
+	
 	font-size: 100% !important;
 	font-weight: 400 !important;
 	
@@ -28,7 +52,7 @@
 
 /* Darker background on mouse-over */
 .btn-home:hover {
-    background-color: #21b2a6;
+    background-color: #edddc6;
 } 
 
 /* MAIN */
@@ -1885,7 +1909,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #edddc6;
 		}
 
 	select {
@@ -1977,7 +2001,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #edddc6;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2492,7 +2516,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #841d1d;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2708,23 +2732,23 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: #edddc6;
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: #8da8b7;
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: white;
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: #8da8b7;
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: #edddc6;
 		}
 
 		.spotlight:nth-child(6) {
@@ -2822,16 +2846,16 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			background-color: #ffffff;
+			color: #2e3842;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				color: #2e3842;
 			}
 
-			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, {
+				color: #2e3842;
 			}
 
 			.wrapper.style1 hr {
@@ -2847,15 +2871,16 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
 				border-color: rgba(0, 0, 0, 0.125);
+				color: #2e3842;
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 label {
@@ -2875,13 +2900,13 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 select option {
-					color: #ffffff;
-					background: #21b2a6;
+					color: #2e3842;
+					background: #ffffff;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: #2e3842;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2892,27 +2917,27 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #a6e0db !important;
+				color: #2e3842 !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #a6e0db !important;
+				color: #2e3842 !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #a6e0db !important;
+				color: #2e3842 !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #a6e0db !important;
+				color: #2e3842 !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #a6e0db !important;
+				color: #2e3842 !important;
 			}
 
 			.wrapper.style1 .icon.major {
@@ -2980,8 +3005,9 @@ input, select, textarea {
 
 			}
 
-		.wrapper.style2 {
-			background-color: #2e3842;
+		.wrapper.style2{
+			background-color: #edddc6;
+			color: #2e3842;
 		}
 
 		.wrapper.style3 {
@@ -3356,7 +3382,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #edddc6;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3474,7 +3500,7 @@ input, select, textarea {
 
 			#header h1 a {
 				border: 0;
-				display: block;
+				/* display: block; */
 				height: inherit;
 				line-height: inherit;
 			}
@@ -3909,7 +3935,7 @@ input, select, textarea {
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: 0.8em;
+			font-size: 0.4em;
 			letter-spacing: 0.225em;
 			list-style: none;
 			padding: 0;
