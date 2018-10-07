@@ -9,6 +9,14 @@
 
 /* Dropdown Content (Hidden by Default) */
 
+.gradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -55,6 +63,8 @@
 	left: 35% !important;
 	display: inline !important;
 	color: #ffffff !important;
+	font-family: 'Quicksand', sans-serif;
+	
 	/* text-align: center !important; */
 }
 
@@ -66,7 +76,7 @@
 
 .navbar-text {
 	
-	font-size: 100% !important;
+	font-size: 75% !important;
 	font-weight: 400 !important;
 	
 }
@@ -2158,12 +2168,14 @@ input, select, textarea {
 		border-radius: 3px;
 		border: 0;
 		display: inline-block;
+		
 		position: relative;
 	}
 
 		.image img {
 			border-radius: 3px;
 			display: block;
+			
 		}
 
 		.image.left {
@@ -2732,20 +2744,29 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		
+		
+		/* max-height:500px; */
 	}
 
 		.spotlight .image {
+			
 			-moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
 			width: 40%;
+			
+
+			
+			
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+				max-height: 300px;
 			}
 
 		.spotlight .content {
@@ -3416,7 +3437,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #edddc6;
+		background: #2e3842;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
