@@ -9,6 +9,46 @@
 
 /* Dropdown Content (Hidden by Default) */
 
+.inner-small{
+	width: 70em !important;
+	margin: 0 auto !important;
+}
+
+.text-image-block {
+	color: #2e3842;
+	align-items: top;
+}
+	.text-image-block a{
+		color: #841d1d !important;
+		font-size: 110%;
+		font-weight: 150%;
+	}
+
+	.text-image-block h1{
+		color: #2e3842 !important;
+		font-size: 110%;
+		font-weight: 150%;
+	}
+
+	.text-image-block h2{
+		color: #2e3842 !important;
+		font-size: 130%;
+		font-weight: 150%;
+	}
+
+	.text-image-block hr {
+		/* border: 0 !important;
+		border-bottom: solid 2px #2e3842 !important;
+		margin: 1em 0 !important; */
+		display:block;
+		border:none;
+		color:white;
+		height:1px;
+		background: #2e3842;
+		background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#2e3842), to(#fff));
+
+	}
+
 .gradient {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
 background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
@@ -2766,7 +2806,7 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
-				max-height: 300px;
+				/* max-height: 300px; */
 			}
 
 		.spotlight .content {
