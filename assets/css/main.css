@@ -9,6 +9,23 @@
 
 /* Dropdown Content (Hidden by Default) */
 
+.contact-button{
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	padding-right: 2%;
+	margin-bottom: -3%;
+	display: block;
+}
+
+.contact-content{
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+  }
+
 .inner-small{
 	width: 70em !important;
 	margin: 0 auto !important;
