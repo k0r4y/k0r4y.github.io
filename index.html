@@ -39,7 +39,7 @@
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a href="#menu" class="menuToggle" ><span id="menutext">Menu</span></a>
 									<div id="menu">
 										<ul>
 												<li><a href="index.html">Home</a></li>
@@ -101,25 +101,21 @@
 								<!-- <section id="one" class="wrapper style1 special">
 										<div class="inner">
 											 -->
-												<div class="w3-card-4 w3-margin w3-white" style="font-size:80%;margin-left:10%;">
+												<div class="blogposts" style="font-size:80%;margin-left:10%;">
 														<img src="/images/blogpost.jpg" alt="Image Placeholder" style="max-width:100px;">
-														  <div class="w3-container style1">
-															<h2><b>NIEUWS</b></h2>
-															<h3 style="color:grey;">Title description, <span style="color:grey">April 2, 2014</span></h3>
+														  <div class="container">
+															<h2><b>Nieuwe Berichten</b></h2>
+															<h3 style="color:grey;"> <span style="color:grey">27 Oktober 2018</span></h3>
+															<a href="www.google.com">Belastingtips voor het komend jaar</a>
+															<br />	
+															<br />
+															<h3 style="color:grey;"> <span style="color:grey">10 Oktober 2018</span></h3>
+															<a href="www.google.com">Welke rechtsvorm past het beste bij uw onderneming?</a>		
 														  </div>
-													  
-														  <div class="w3-container">
-															<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-															  tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-															<div class="w3-row">
-															  <div class="w3-col m8 s12">
-																<p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-															  </div>
-															  <div class="w3-col m4 w3-hide-small">
-																<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-															  </div>
-															</div>
-														  </div>
+														  
+														  	
+
+
 														</div>
 <!-- 			
 										</div>
@@ -143,7 +139,7 @@
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
 								<h1>Belastingadvies</h1>
 								<hr>
-								Tekst moet even veel regels bevatten anders ziet het er raar uit.
+								Test.
 								
 							
 							</div>
@@ -154,11 +150,7 @@
 							</div>
 						</div>
 				</section>
-<!-- 
-				Alleen maar kak hier.<br />
-				Alleen maar kak hier.
-				Alleen maar kak hier.
-				Alleen maar kak hier. -->
+
 							
 				<section id="one" class="wrapper style1 special">
 						<div class="inner row text-image-block" style="display: flex; align-items: center;">
@@ -181,6 +173,11 @@
 								<hr>
 								Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
 							</div>
+						</div>
+						<br />
+						<br />
+						<div class="inner">
+							<a href="pricing.html" class="button fit buttoncolor">Tarieven vanaf €99,- p.m.</a>
 						</div>
 						<hr>
 				</section>
@@ -339,14 +336,46 @@
 					<div class="contact-button">
 						
 						<ul class="actions special">
-							<li><a href="#" class="button primary collapsible">Diensten</a></li>
+							<li><a  class="button primary collapsible" onclick="showDiv()">Contact</a></li>
 							<div class="contact-content">
 								test
 							</div>
 						</ul>
 
 					</div>
+				
 
+				<!-- Contact Form-->
+				<div class="contact-form" id="ContactForm">
+					
+					<div class="contact-form-content">
+						<span class="contact-form-close" onclick="closeDiv()">&times;</span>
+						<h1>Contact</h1>
+						<p style="text-align:center;font-size:90%;color:rgb(110, 110, 110);">
+							
+							Wij zijn te bereiken op het telefoonnummer <span style="color:red;font-size:120%;text-decoration: underline;">020-1234567</span>.
+							<br />
+							U kunt ons ook een bericht sturen via het onderstaande formulier.
+						</p>
+						<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+							Naam:<br>
+							<input type="text" name="name" placeholder="Vul hier uw naam in"><br>
+							E-mail:<br>
+							<input type="text" name="mail" placeholder="Jan@outlook.com	"><br>
+							Uw vraag:<br>
+							<textarea name="demo-message" id="demo-message" placeholder="Plaats hier uw bericht" rows="4"></textarea><br><br>
+							
+							<ul class="actions special">
+									<li><input class="button primary" type="submit" value="vestuur bericht"></li>									
+								</ul>
+							
+							<!-- <input type="submit" value="Send">
+							<input type="reset" value="Reset"> -->
+							</form>
+
+					</div>
+
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -358,7 +387,7 @@
 							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Trident F.S. V.o.F.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 

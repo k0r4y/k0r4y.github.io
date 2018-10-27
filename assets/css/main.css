@@ -9,6 +9,115 @@
 
 /* Dropdown Content (Hidden by Default) */
 
+textarea::-webkit-input-placeholder {
+	color: #0bf;
+	}
+	
+	textarea:-moz-placeholder { /* Firefox 18- */
+	color: #0bf;  
+	}
+	
+	textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: #0bf;  
+	}
+	
+	textarea:-ms-input-placeholder {
+	color: #0bf;  
+	}
+
+.contact-form {
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+	top: 0;
+	/* padding-top:10%; */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	overflow: auto;
+}
+	.contact-form h2{
+		font-size:100%;
+		font-weight:100% !important;
+		color:black;
+		text-transform:none;
+	}
+
+	.contact-form h1{
+		font-size:120%;
+		font-weight:100% !important;
+		color:#2e3842;
+		text-transform:none;
+		text-align:center;
+	}
+
+
+.contact-form-content {
+	color:black;
+	background-color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	overflow-y: hidden;
+}
+
+.contact-form-close {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-form-close:hover,
+.contact-form-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#menutext {
+	display:none;
+}
+
+
+
+.buttoncolor {
+	background-color: #841d1d !important;
+}
+
+.pricing-table {
+	text-align:left;
+	list-style-type: none;
+	
+}
+
+	.pricing-table h1 {
+		color:#2e3842;
+	}
+	.pricing-table h5 {
+		font-size:120%;
+		font-weight:120%;
+		color:#841d1d !important;		
+	}
+
+	.pricing-table ul li{
+		text-align:center;
+		list-style-type: none;
+		padding:0;
+	}
+
+.blogposts {
+	display:block;
+}
+	.blogposts a{
+		color:#841d1d;		
+	}
+
 .contact-button{
 	position:fixed;
 	bottom: 0;
@@ -111,7 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 }
 
-.pricing-navbar-text, a{
+.pricing-navbar-text a{
 	color: white !important;
 	
 }
@@ -2114,22 +2223,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(245, 112, 112, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(245, 112, 112, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(245, 112, 112, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(245, 112, 112, 0.5) !important;
 		opacity: 1.0;
 	}
 
@@ -3648,7 +3757,7 @@ input, select, textarea {
 					#header nav > ul > li > a {
 						border: 0;
 						color: #fff;
-						display: block;
+						display: none;
 						font-size: 0.8em;
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
@@ -3675,6 +3784,7 @@ input, select, textarea {
 
 								#header nav > ul > li > a.menuToggle {
 									padding: 0 1.5em;
+									display: inline-block !important;
 								}
 
 									#header nav > ul > li > a.menuToggle span {

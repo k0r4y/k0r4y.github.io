@@ -4,20 +4,29 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// Contact-form
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var contact-content = this.nextElementSibling;
-    if (contact-content.style.maxHeight){
-      contact-content.style.maxHeight = null;
-    } else {
-      contact-contact-content.style.maxHeight = contact-content.scrollHeight + "px";
-    } 
-  });
+function showDiv() {
+	document.getElementsByClassName("contact-form")[0].style.display = "block";
+ }
+
+
+// When the user clicks on <span> (x), close the modal
+function closeDiv() {
+	document.getElementsByClassName("contact-form")[0].style.display = "none";
 }
+
+
+var modal = document.getElementById('ContactForm');
+
+window.addEventListener("click", function(event) {
+
+	//alert(event.target)
+	  if (event.target == modal) {
+		  modal.style.display = "none";
+	  } 
+  });
+//
 
 
 (function($) {
