@@ -7,8 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Dropdown Content (Hidden by Default) */
 
+.diensten-tekst {
+	text-align: left;
+}
+
+.bulletpoints ul{
+	list-style-type: circle;
+	text-align:left;
+	/* display:inline-block; */
+	list-style-position: inside;
+	padding-left: 0;
+}
 
 input[type="radio"]{
     -webkit-appearance: radio;

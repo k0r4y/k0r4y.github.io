@@ -5,13 +5,18 @@
 */
 
 // Price calculation
-stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
-stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
-stap3 = 50;
-stappentotaal = stap1+stap2+stap3;
+// stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
+// stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
+// stap3 = 50;
+// stappentotaal = stap1+stap2+stap3;
 
 
 function updateTotaal(){
+	stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
+	stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
+	stap3 = 50;
+	stappentotaal = stap1+stap2+stap3;
+
 	if (document.querySelector('input[name="stap1"]:checked').value == 50 ){
 		document.getElementById('optie1').innerHTML = "- 1 tot 100 (€50,-)";
 		
@@ -32,6 +37,11 @@ function updateTotaal(){
 
 
 function stap1Radio (){
+	stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
+	stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
+	stap3 = 50;
+	stappentotaal = stap1+stap2+stap3;
+
 	// if (stap2 = null){
 	// 	Number(document.querySelector('input[name="stap2"]:checked').value);
 
@@ -49,6 +59,11 @@ function stap1Radio (){
 
 
 function stap2Radio (){
+	stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
+	stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
+	stap3 = 50;
+	stappentotaal = stap1+stap2+stap3;
+
 	// if (stap1 = null){
 	// 	Number(document.querySelector('input[name="stap1"]:checked').value);
 
