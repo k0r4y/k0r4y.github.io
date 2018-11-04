@@ -9,6 +9,11 @@
 
 /* Dropdown Content (Hidden by Default) */
 
+
+input[type="radio"]{
+    -webkit-appearance: radio;
+}
+
 textarea::-webkit-input-placeholder {
 	color: #0bf;
 	}
@@ -24,6 +29,63 @@ textarea::-webkit-input-placeholder {
 	textarea:-ms-input-placeholder {
 	color: #0bf;  
 	}
+
+#totalcost{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 15%;
+	float:right;
+	padding: 20px;
+	width: 400px;
+	margin-top:15%;
+	margin-right:5%;
+	background-color: #2e3842;
+	color: #fff;
+	z-index: 1;
+	border: 2px solid #841d1d;
+	border-radius: 12px;
+	font-size:75%;
+
+}   
+
+
+
+
+.stappenplan {
+	text-align:center;
+	
+}
+
+.stappenplan-vragen {
+	padding-bottom: 1em;
+	padding-top: 1em;
+	color:black;
+	/* display:flex; */
+}
+	.stappenplan-vragen h1 {
+	color:black;
+	font-size: 100%;
+	font-weight: 3;
+	letter-spacing: 0.015em;
+	
+
+	}
+
+.col-center{
+	display:inline-block;
+	float:top;
+	text-align:left;
+	margin-right:-4px;
+}
+
+.checkbox p, .checkbox a,{
+	color:black ;
+}
+
+#checkbox_1 {
+	color:black;
+}
+
 
 .contact-form {
 	display: none; /* Hidden by default */
@@ -230,6 +292,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: inline !important;
 	color: #ffffff !important;
 	font-family: 'Quicksand', sans-serif;
+	z-index:1;
 	
 	/* text-align: center !important; */
 }
@@ -325,12 +388,12 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+/* input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-}
+} */
 
 /* Basic */
 
@@ -2073,7 +2136,7 @@ input, select, textarea {
 	}
 
 /* Form */
-
+/* 
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -2148,9 +2211,9 @@ input, select, textarea {
 
 	textarea {
 		padding: 0.75em 1em;
-	}
+	} */
 
-	input[type="checkbox"],
+	/* input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2240,7 +2303,7 @@ input, select, textarea {
 	:-ms-input-placeholder {
 		color: rgba(245, 112, 112, 0.5) !important;
 		opacity: 1.0;
-	}
+	} */
 
 /* Box */
 
@@ -3105,7 +3168,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 label {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 input[type="text"],
@@ -3125,7 +3188,7 @@ input, select, textarea {
 					background: #ffffff;
 				}
 
-			.wrapper.style1 input[type="checkbox"] + label,
+			/* .wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
 				color: #2e3842;
 			}
@@ -3139,26 +3202,26 @@ input, select, textarea {
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
 				color: #2e3842;
-			}
+			} */
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #2e3842 !important;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #2e3842 !important;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #2e3842 !important;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #2e3842 !important;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #2e3842 !important;
+				color: #2e3842;
 			}
 
 			.wrapper.style1 .icon.major {
@@ -3289,7 +3352,7 @@ input, select, textarea {
 					background: #505393;
 				}
 
-			.wrapper.style3 input[type="checkbox"] + label,
+			/* .wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
 				color: #d3d4e4;
 			}
@@ -3302,7 +3365,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #505393;
+				color: #505393; */
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
@@ -3452,7 +3515,7 @@ input, select, textarea {
 					background: #ffffff;
 				}
 
-			.wrapper.style5 input[type="checkbox"] + label,
+			/* .wrapper.style5 input[type="checkbox"] + label,
 			.wrapper.style5 input[type="radio"] + label {
 				color: #4E4852;
 			}
@@ -3466,7 +3529,7 @@ input, select, textarea {
 			.wrapper.style5 input[type="radio"]:checked + label:before {
 				background: #2E3842;
 				color: #ffffff;
-			}
+			} */
 
 			.wrapper.style5 ::-webkit-input-placeholder {
 				color: #8E8892 !important;

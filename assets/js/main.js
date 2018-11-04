@@ -4,6 +4,73 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// Price calculation
+stap1= Number(document.querySelector('input[name="stap1"]:checked').value);
+stap2= Number(document.querySelector('input[name="stap2"]:checked').value);
+stap3 = 50;
+stappentotaal = stap1+stap2+stap3;
+
+
+function updateTotaal(){
+	if (document.querySelector('input[name="stap1"]:checked').value == 50 ){
+		document.getElementById('optie1').innerHTML = "- 1 tot 100 (€50,-)";
+		
+	} else if (document.querySelector('input[name="stap1"]:checked').value == 100) {
+		document.getElementById('optie1').innerHTML = "- 101 tot 300 (€100,-)";
+	} else {
+		document.getElementById('optie1').innerHTML = "- 301 tot 500 (€150,-)"
+	}
+	if (document.querySelector('input[name="stap2"]:checked').value == 50 ){
+		document.getElementById('optie2').innerHTML = "- eenmanszaak of vof (€50,-)";
+	} else if(document.querySelector('input[name="stap2"]:checked').value == 100 ){
+		document.getElementById('optie2').innerHTML = "- bv of nv (€100,-)";
+	} else {
+		document.getElementById('optie2').innerHTML = "- anders (€150,-)";
+	}
+
+}
+
+
+function stap1Radio (){
+	// if (stap2 = null){
+	// 	Number(document.querySelector('input[name="stap2"]:checked').value);
+
+	// } else {
+	// 	// stap2 = stap2;
+	// }
+	window.stap1 = Number(document.querySelector('input[name="stap1"]:checked').value);
+	document.getElementById("vragenlijst-totaal").innerHTML = "€" + (stap1 + stap2) +",-";
+
+		// if (document.querySelector('input[name="stap1"]:checked').value == a ) {
+
+		// };
+	updateTotaal();
+	};
+
+
+function stap2Radio (){
+	// if (stap1 = null){
+	// 	Number(document.querySelector('input[name="stap1"]:checked').value);
+
+	// } else {
+	// 	stap1 = stap1;
+	// }
+	window.stap2 = Number(document.querySelector('input[name="stap2"]:checked').value);
+	document.getElementById("vragenlijst-totaal").innerHTML = "€" + (stap1 + stap2) +",-";
+	updateTotaal();
+}
+
+// function berekenPrijs(){
+// 	var x = document.getElementById("berekenprijs").value;
+// 	var 
+// 	var stap2 = 0;
+// 	var stap3 = 0;
+	
+// 	var x = stap1 + stap2 + stap3;
+
+//     document.getElementById("vragenlijst-totaal").innerHTML = x;
+// }
+
 // Contact-form
 
 function showDiv() {

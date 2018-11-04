@@ -60,12 +60,120 @@
 						</nav>
 					</header>
 
-				<!-- Main -->
+                <!-- Main -->
+                
+                    
+                    
+
 					<article id="main">
+                        
 						<header>
 							<h2>Tarieven</h2>
 							<p>Belastingadvies, administratie/boekhouding en payrolling</p>
                         </header>
+
+
+
+                        <!-- Stappenplan -->
+                    
+                        <div id="totalcost">
+                                geselecteerde opties:
+                                <br />
+                                <span id="stappenplan-opties">
+                                   <span id="optie1"> - 1 tot 100 (€50,-) </span>
+                                    <br />
+                                    <span id="optie2">- eenmanszaak of bv (€50,-)</span>
+                                </span>
+                                <br />
+                                <hr>
+                                totale prijs: <span id="vragenlijst-totaal">€100,-</span>
+                        </div>
+                        <div class="style1 wrapper stappenplan">
+                                <div class="stappenplan-vragen col-center">
+                                        <!-- totale prijs: <span id="vragenlijst-totaal">€100,-</span> -->
+
+                            <div class="stappenplan-vragen" class="row">
+
+                                    <div class="stappenplan-js  col-center">
+                                      <h1>Selecteer het aantal in- en verkoopfacturen per jaar</h1>
+                                
+                                
+
+                                        <div>
+                                            <form>
+                                                <fieldset>
+                                                    <div>
+                                                            <input type="radio" id="stap1vraag1"
+                                                                name="stap1"    value="50" checked
+                                                                onclick="stap1Radio()" />
+                                                            <label id="stap1vraag1label" for="vraag1">1 tot 100</label>
+                                                    </div>
+                                                    <div>
+                                                            <input type="radio" id="stap1vraag2"
+                                                            name="stap1"    value="100"
+                                                            onclick="stap1Radio()"  />
+                                                            <label for="vraag2">101 tot 300</label>
+                                                    </div>  
+                                                        <div>
+                                                            <input type="radio" id="stap1vraag3"
+                                                            name="stap1"   value="150"
+                                                            onclick="stap1Radio()" />
+                                                            <label for="vraag3">301 tot 500</label>
+                                                        </div>
+                                                    
+                                            
+                                                    
+                                            
+                                                </fieldset>
+                                            </form>
+                                      </div>  
+                                   
+                                    <div >
+                                    <br />
+                                            <h1>Kies een rechtsvorm</h1>
+                                        <form>
+                                                <fieldset>
+                                                                                        
+                                                    <div>
+                                                        <div>
+                                                            <input type="radio" id="stap2vraag1"
+                                                                name="stap2"    value="50" checked
+                                                                onclick="stap2Radio()" />
+                                                            <label for="vraag1">eenmanszaak of vof</label>
+                                                        </div>
+                                                        <div>
+                                                            <input type="radio" id="stap2vraag2"
+                                                            name="stap2"    value="100"
+                                                            onclick="stap2Radio()"  />
+                                                            <label for="vraag2">bv of nv</label>
+                                                        </div>  
+                                                        <div>
+                                                            <input type="radio" id="stap2vraag3"
+                                                            name="stap2"   value="150"
+                                                            onclick="stap2Radio()" />
+                                                            <label for="vraag3">anders</label>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    
+                                            
+                                                </fieldset>
+                                            </form>
+
+                                    </div>
+                                    
+                                   
+
+                                </div>
+
+                                  
+                                     
+                                    </div>
+                            </div>
+                           
+                            
+                            
+                        </div>
                         
                         <div class="wrapper style5">
 							<div class="inner pricing-text">
@@ -141,8 +249,12 @@
                     </section>
                         
 
+                        
+
+                     
+
                         <!-- Pricing list -->
-						<section class="wrapper style5">
+						<!-- <section class="wrapper style5">
 							<div class="inner">
 								<section>
                                     <body>
@@ -228,7 +340,7 @@
 
 							</div>
 						</section>
-					</article>
+					</article> 
 
 				<!-- Footer -->
 					<footer id="footer">
