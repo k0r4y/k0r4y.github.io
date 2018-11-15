@@ -10,6 +10,19 @@
 // stap3 = 50;
 // stappentotaal = stap1+stap2+stap3;
 
+// $(function() {
+// 	$(".tooltip").tooltip();
+// 	var content = $( ".tooltip" ).tooltip( "option", "content" );
+// });
+
+$(document).ready(function() {
+	$(document).tooltip();
+  });
+
+
+$(function() {
+	$( ".draggable" ).draggable();
+ });
 
 function updateTotaal(){
 	stap1= Number(document.querySelector('input[name="stap1"]:checked').value);

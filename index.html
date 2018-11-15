@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+		
 	</head>
 	<body class="landing is-preload">
 
@@ -131,13 +134,13 @@
 						<div class="inner row text-image-block" style="display: flex;">
 							<div class="col-4 col-12-medium">
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
-								<h1>Boekhouding</h1>
+								<h1>Administratie</h1>
 								<hr>
 								Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
 							</div>
 							<div class="col-4 col-12-medium">
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
-								<h1>Belastingadvies</h1>
+								<h1>Processen opzetten</h1>
 								<hr>
 								Test.
 								
@@ -156,20 +159,20 @@
 						<div class="inner row text-image-block" style="display: flex; align-items: center;">
 							<div class="col-4 col-12-medium">
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
-								<h1>Boekhouding</h1>
+								<h1>Payrolling</h1>
 								<hr>
 								Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
 							</div>
 							<div class="col-4 col-12-medium">
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
-								<h1>Belastingadvies</h1>
+								<h1>Advisering</h1>
 								<hr>
 								Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
 							
 							</div>
 							<div class="col-4 col-12-medium">
 								<img src="piccas/1.png" style="max-width:50px;"/><br />
-								<h1>Payrolling</h1>
+								<h1>Treasury</h1>
 								<hr>
 								Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
 							</div>
@@ -348,7 +351,7 @@
 				<!-- Contact Form-->
 				<div class="contact-form" id="ContactForm">
 					
-					<div class="contact-form-content">
+					<div class="contact-form-content draggable responsive-contact">
 						<span class="contact-form-close" onclick="closeDiv()">&times;</span>
 						<h1>Contact</h1>
 						<p style="text-align:center;font-size:90%;color:rgb(110, 110, 110);">
@@ -357,17 +360,54 @@
 							<br />
 							U kunt ons ook een bericht sturen via het onderstaande formulier.
 						</p>
-						<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+						<form class="gform contact-form-form" action="https://script.google.com/macros/s/AKfycby7Y5UuRpX26RaacHoNmQnTTDI_JgKgsCQ_4miI/exec" method="post" enctype="text/plain">
 							Naam:<br>
 							<input type="text" name="name" placeholder="Vul hier uw naam in"><br>
 							E-mail:<br>
-							<input type="text" name="mail" placeholder="Jan@outlook.com	"><br>
+							<input type="text" name="email" placeholder="Jan@outlook.com	"><br>
 							Uw vraag:<br>
-							<textarea name="demo-message" id="demo-message" placeholder="Plaats hier uw bericht" rows="4"></textarea><br><br>
+							<textarea name="message" id="demo-message" placeholder="Plaats hier uw bericht" rows="4"></textarea><br><br>
 							
 							<ul class="actions special">
-									<li><input class="button primary" type="submit" value="vestuur bericht"></li>									
+									<li><input class="button primary" type="submit" value="vestuur bericht" ></li>									
 								</ul>
+
+
+<!-- 
+								<div class="form-elements">
+										<fieldset class="pure-group">
+										  <label for="name">Name: </label>
+										  <input id="name" name="name" placeholder="What your Mom calls you" />
+										</fieldset>
+								  
+										<fieldset class="pure-group">
+										  <label for="message">Message: </label>
+										  <textarea id="message" name="message" rows="10"
+										  placeholder="Tell us what's on your mind..."></textarea>
+										</fieldset>
+								  
+										<fieldset class="pure-group">
+										  <label for="email"><em>Your</em> Email Address:</label>
+										  <input id="email" name="email" type="email" value=""
+										  required placeholder="your.name@email.com"/>
+										  <span class="email-invalid" style="display:none">
+											Must be a valid email address</span>
+										</fieldset>
+								  
+										<fieldset class="pure-group">
+										  <label for="color">Favourite Color: </label>
+										  <input id="color" name="color" placeholder="green" />
+										</fieldset>
+								  
+										<button class="button-success pure-button button-xlarge">
+										  <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+									  </div>
+								  
+									  <!-- Customise the Thankyou Message People See when they submit the form: -->
+									  <div class="thankyou_message" style="display:none;">
+										<h2><em>Thanks</em> for contacting us!
+										  We will get back to you soon!</h2>
+								  </div> -->
 							
 							<!-- <input type="submit" value="Send">
 							<input type="reset" value="Reset"> -->
@@ -379,16 +419,37 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Trident F.S. V.o.F.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+
+							<div class="row">
+									<div class="col-4 col-12-medium">
+											Contact:
+											<br />
+											Telefoonnummer: xxx
+											<br />
+											Adres: xxx
+											<br />
+											Postcode: xxx
+											<br />
+											Openingstijden: xx - xx
+										</div>
+
+									<div class="col-4 col-12-medium">
+											<ul class="copyright">
+													<li><i class="far fa-copyright"></i>; Trident F.S. V.o.F.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+												</ul>
+										</div>
+
+									<div class="col-4 col-12-medium">
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+										</ul>
+										
+									</div>
+									
 					</footer>
 
 			</div>
@@ -401,6 +462,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
